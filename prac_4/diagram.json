@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 10.2, "left": 18.6, "attrs": {} },
+    { "type": "board-ds18b20", "id": "temp1", "top": -77.93, "left": 186.48, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -153.3, "left": 42.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "temp1:GND", "uno:GND.3", "black", [ "v0" ] ],
+    [ "dht1:GND", "uno:GND.2", "black", [ "v0" ] ],
+    [ "dht1:VCC", "uno:11", "red", [ "v0" ] ],
+    [ "temp1:VCC", "uno:4", "red", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
